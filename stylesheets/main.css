@@ -1,0 +1,136 @@
+body {
+	color: #5d5d5d;
+    font-family: 'Circular',sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.5em;
+}
+
+img {
+	margin-right: 8px;
+	margin-top: 40px;
+	border: 2px solid black;	
+}
+
+.header-container {
+	margin: 0 auto;
+    max-width: 100%;
+    height: 300px;
+    /*border: 1px solid blue;*/
+}
+
+.header-column-one {
+	/*border: 1px solid red;*/
+	float: left;
+	font-family: 'Circular',sans-serif; 
+	font-size: 20px;
+	width: 28%;
+	height: 100%;
+	margin-right:80px;
+	position: relative;
+	display: block;
+	/*overflow: hidden;*/
+}
+
+.logo {
+	float: left;
+	margin-left: 5.8%;
+	width: 86%;
+
+}
+
+.header-column-two {
+	/*border: 1px solid green;*/
+	width: 50%;
+	display: block;
+	box-sizing: border-box;
+	padding:0px;
+	position: relative;
+	float: left;
+	padding: 40px 10px;
+}
+
+.header-column-two li {
+	font-family: 'Circular',sans-serif; 
+	font-size: 20px;
+}
+
+.image-container {
+	float: left;
+	/*text-align: center;*/
+	/*border: 1px solid red;*/
+}
+
+.image-container-wrapper {
+	/*border: 1px solid green;*/
+	position: relative;
+	/*float: left;*/
+	display: inline-block;
+	float: left;
+	margin-left: 2%;
+}
+
+.img-figure {
+	display: block;
+	font-size: 15px;
+	line-height: 1.5em;
+	/*border: 1px solid red;*/
+	line-height: 1.5em;
+	position: relative;
+	float: left;
+	z-index: 0;
+	margin-bottom: 6%;
+}
+.img-figure:hover {
+	background-color: transparent;
+	z-index: 50;
+}
+
+.img-figure span { /*CSS for enlarged image*/
+	position: absolute;
+	visibility: hidden;
+	background-color: lightyellow;
+	padding: 5px;
+	left: 500px;
+	border: 2px solid black;
+}
+
+.img-figure span img { /*CSS for enlarged image*/
+	border: none;
+	
+}
+
+.img-figure:hover span {
+	visibility: visible;
+	bottom: 13%;
+	left: 2%; /*position where enlarged image should offset horizontally */
+
+}
+
+.top-caption {
+	font-weight: bold;
+	font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* DESKTOP VERSION OF */
+
+@media all and (min-width: 480px) {
+
+}
+
+
+/*font-family: 'Circular',sans-serif;*/

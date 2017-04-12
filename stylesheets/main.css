@@ -51,24 +51,18 @@ img {
 	padding: 40px 10px;
 }
 
-.header-column-two,
-.header-column-three li {
+.header-column-two li {
 	font-family: 'Circular',sans-serif; 
 	font-size: 20px;
 }
 
-a {
-	color:white;
-	border:2px solid black;
-	/*padding: 20px;*/
-	padding:20px 35px 20px 35px;
-	background-color: black;
-	text-decoration: none;
-}
 
-a:hover {
-	background-color: white;
-	color: #5d5d5d;
+
+
+
+.header-column-three li {
+	font-family: 'Circular',sans-serif; 
+	font-size: 20px;
 }
 
 .header-column-three {
@@ -83,9 +77,6 @@ a:hover {
 .contact-page {
 	/*border: 1px solid black;*/
 }
-
-
-
 
 .image-container {
 	float: left;
@@ -144,7 +135,126 @@ a:hover {
 }
 
 
+/*STYLING FOR LAST IMAGE IN ROW. HOVER IMAGE TO THE LEFT*/
 
+
+.img-figure-left {
+	display: block;
+	font-size: 15px;
+	line-height: 1.5em;
+	/*border: 1px solid red;*/
+	line-height: 1.5em;
+	position: relative;
+	/*float: left;*/
+	z-index: 0;
+	margin-bottom: 6%;
+}
+.img-figure-left:hover {
+	background-color: transparent;
+	z-index: 50;
+}
+
+.img-figure-left span { /*CSS for enlarged image*/
+	position: absolute;
+	visibility: hidden;
+	background-color: lightyellow;
+	padding: 5px;
+	border: 2px solid black;
+}
+
+.img-figure-left span img { /*CSS for enlarged image*/
+	border: 1px solid black;
+	
+}
+
+.img-figure-left:hover span {
+	visibility: visible;
+	bottom: 13%;
+	left: 2%; /*position where enlarged image should offset horizontally */
+}
+
+
+
+
+
+/* FOOTER STYLING */
+
+footer {
+	bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #232729;
+    color: #b8bec1;
+    overflow: hidden;
+    z-index: 0;
+    height: 50%;
+}
+
+.inner {
+
+}
+
+footer .footer-container {
+	width: 1080px;
+    margin-left: 27%;
+    /*border: 1px solid red;*/
+
+}
+
+.clearfix {
+
+}
+
+.footer-head {
+	text-align: center;
+
+}
+
+.footer-head p {
+	display: inline;
+}
+.footer-title {
+	margin-top: 2%;
+	float: left;
+	text-transform: uppercase;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.footer-description {
+	float:right;
+	margin-right: 20%;
+	margin-top: 2%;
+	color: #b8bec1;
+	/*line-height: 29px;*/
+}
+
+.footer-separator {
+	display: block;
+    width: 80%;
+    height: 10px;
+    background: #35393b;
+    /*border:1px solid red;*/
+    position: relative;
+    top:60px;
+}
+
+.footer-content {
+	margin-top: 5%;
+	/*border: 1px solid blue;*/
+}
+
+
+.coordinates {
+	/*border:1px solid red;*/
+	float: right;
+	top:60px;
+	position: relative;
+	right:30%;
+	font-weight: 500;
+	font-family: 'Circular',sans-serif;
+}
 
 
 
@@ -164,3 +274,15 @@ a:hover {
 
 
 /*font-family: 'Circular',sans-serif;*/
+
+/*raising height of footer box*/
+
+/*on last image move image on hover to the left*/
+
+
+
+
+
+
+
+

@@ -7,7 +7,7 @@ body {
     line-height: 1.5em;
 }
 
-img {
+.image-container-wrapper img {
 	margin-right: 8px;
 	margin-top: 40px;
 	border: 2px solid black;	
@@ -26,7 +26,7 @@ img {
 	font-family: 'Circular',sans-serif; 
 	font-size: 20px;
 	width: 28%;
-	height: 100%;
+	height: 60%;
 	margin-right:80px;
 	position: relative;
 	display: block;
@@ -34,11 +34,61 @@ img {
 }
 
 .logo {
+	border:2px solid black;
 	float: left;
+	top:30%;
+	left: 0%;
 	margin-left: 5.8%;
-	width: 86%;
-
+	width: 85%;
+	display: block;
+	height: auto;
+	position: absolute;
 }
+
+
+
+
+
+.overlay {
+  position: absolute;
+  /*top:10%;*/
+  bottom: 70%;
+  left: 5.5%;
+  right: 0%;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 86%;
+  height:0;
+  transition: .5s ease;
+  /*opacity: 0.9;*/
+}
+
+.header-column-one:hover .overlay {
+  bottom: 3%;
+  height: 68%;
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 30px;
+  letter-spacing: 2px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+
+
+
 
 .header-column-two {
 	/*border: 1px solid green;*/
@@ -54,24 +104,6 @@ img {
 .header-column-two li {
 	font-family: 'Circular',sans-serif; 
 	font-size: 20px;
-}
-
-
-
-
-
-.header-column-three li {
-	font-family: 'Circular',sans-serif; 
-	font-size: 20px;
-}
-
-.header-column-three {
-	/*border:1px solid red;*/
-	position: relative;
-	float: right;
-	display: block;
-	right:5%;
-	top:25%;
 }
 
 .contact-page {
